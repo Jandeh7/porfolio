@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane Andeh</title>
     <link rel="stylesheet" href="style.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/eeef2d167e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- Header Section -->
     <header class="heading">
+        <h1>JAE</h1>
         <nav>
             <ul>
                 <li><a class="active" href="#about">About Me</a></li>
@@ -24,89 +28,99 @@
     <!-- Main Section -->
     <main class="clearfix">
         <section class="about-me clearfix" id="about">
+            <div class="about-img">
+                <img src="img/about-img.jpeg" alt="">
+            </div>
+
             <div class="about-text">
                 <div class="about-t">
-                    <h2>Hi! I'm Jane Andeh.</h2>
-                    <p>A brief description of myself and what I do... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula metus in bibendum laoreet. Aenean libero est, egestas eu eros pretium, sodales iaculis est.</p>
-                    <button>Hire Me</button>
+                    <div>
+                        <h2>Hi! I'm Jane Andeh.</h2>
+                        <p>An enthusiastic front-end web developer with experience in translating 
+                            wire-frames of user interface designs into testable, responsive, 
+                            scalable and user-friendly web applications using the core web tools 
+                            including but not limited to HTML, CSS and JavaScript.</p>
+                    </div>
+                    <div class="btn">
+                        <a class="about-btn" href="/andehjane-resume.pdf" target="_blank">Resume</a>
+                        <a class="about-btn" href="mailto:andehjane@gmail.com">Hire Me!</a>
+                    </div>
                 </div>
             </div>
-            <div class="about-img">
-                <img src="img/about-img.jpeg" alt="" class="logo">
-            </div>
+            
         </section>
 
         <section id="skills" class="skills">
+
+            <h3>My Skills</h3>
+
             <div>
-                <h1>My Skills</h1>
-                <p class="">Photoshop . HTML CSS JS . Web Design</p>
-           </div>
-
-           <div class="">
-                <strong>Frontend Design</strong>
-                    <span class="">90%</span>
-                    <div class="progress">
-                        <div class="" ></div>
-                    </div>
-
-                <strong>Backend processing</strong>
-                    <span class="">70%</span>
-                    <div class="">
-                        <div ></div>
-                    </div>
-
-                <strong>HTML5 & CSS3</strong>
-                    <span class="">80%</span>
-                    <div class="">
-                        <div class=""></div>
-                    </div>
+                <div class="tech-skills">
+                    <i class="fab fa-html5"> HTML5 </i>
+                    <progress max="100" value="75"></progress>
+                </div>
+                <div class="tech-skills">
+                    <i class="fab fa-css3-alt"> CSS3 </i>
+                    <progress max="100" value="75"></progress>
+                </div>
+                <div class="tech-skills">
+                    <i class="fab fa-js"> JavaScript </i>
+                    <progress max="100" value="50"></progress>
+                </div>
+                <div class="tech-skills">
+                    <i class="fab fa-bootstrap"> Bootstrap </i>
+                    <progress max="100" value="75"></progress>
+                </div>
             </div>
-            
-            <div></div>
-            <div></div>
-            <div></div>
         </section>
 
         <section id="projects" class="projects">
-            <div>
-                <h3>My Recent Projects</h3>
-            </div>
-            <div>
-                <iframe scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" height="200" width="250" title="Landing Page"></iframe>
-                <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">W3Schools.com</a></p>
-            </div>
-            <div>
-                <iframe class="web-project" scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" height="200" width="250" title="Landing Page"></iframe>
-                <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">W3Schools.com</a></p>
-            </div>
-            <div>
-                <iframe class="web-project" scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" height="200" width="250" title="Landing Page"></iframe>
-                <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">W3Schools.com</a></p>
+            <h3>My Recent Projects</h3>
+            <div class="project-card">
+                <div class="first">
+                    <iframe scrolling="no" src="https://game-applanding.netlify.app/" frameborder="0" height="200" title="Landing Page"></iframe>
+                    <p><a href="https://game-applanding.netlify.app/" target="iframe_a">Game App Landing Page</a></p>
+                </div>
+                <div class="second">
+                    <iframe scrolling="no" src="https://beau-hngi.herokuapp.com" frameborder="0" height="200" title="Landing Page"></iframe>
+                    <p><a href="https://beau-hngi.herokuapp.com" target="iframe_a">Beauty App Landing Page</a></p>
+                </div>
+                <div class="third">
+                    <iframe scrolling="no" src="https://fylo-frontendmasters.vercel.app/" frameborder="0" height="200" title="Landing Page"></iframe>
+                    <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">Frontend Masters Challenge</a></p>
+                </div>
+                <div class="fourth">
+                    <iframe scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" height="200" title="Landing Page"></iframe>
+                    <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">Sign-up Form</a></p>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer id="contact">
-        <div class="skills">
-            <h3>Let's talk</h3>
-            <form action="" name="Signupforn" id="subscribe">
-                <input type="text" name="name" id="name" placeholder="Your Name">
-                <input type="email" name="email" id="email" placeholder="Your Email" required>
+    <footer id="contact" class="foot">
+        <div class="skills subscribe">
+            <h3>Let's talk!</h3>
+            <form action="" class="subscribe-form" id="subscribe" method="POST" data-netlify="true">
+                <input type="text" class="form-name" id="name" placeholder="Your Name">
+                <input type="email" class="form-email" id="email" placeholder="Your Email" required>
                 
-                <textarea name="message" id="form-msg" form="subscribe" cols="30" rows="5"></textarea>
+                <textarea class="form-message" id="form-msg" form="subscribe" cols="30" rows="5" placeholder="Your Message"></textarea>
                 <input type="submit" class="submit" value="Signup" id="submit">
             </form>
         </div>
-        <div>
+
+        <div class="contact">
             <h3>Contact Me</h3>
             <ul class="">
-                <li><a href="#"><i class="fa fa-phone"></i>Phone</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="tel:+2347067977733" target="_blank"><i class="fas fa-spin fa-phone"></i></a></li>
+                <li><a href="https://github.com/Jandeh7" target="_blank"><i class="fab fa-spin fa-github"></i></i></a></li>
+                <li><a href="https://www.linkedin.com/in/janeandeh" target="_blank"><i class="fab fa-spin fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/invites/contact/?i=1jmkhlfyb9t03&utm_content=q0qo9m" target="_blank"><i class="fab fa-spin fa-instagram"></i></a></li>
             </ul>
         </div>
+
+        <p>&copy;2020 Andeh Jane</p>
     </footer>
 </body>
 </html>
