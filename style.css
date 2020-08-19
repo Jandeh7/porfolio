@@ -245,7 +245,7 @@ color: #59c4c4;
     font-size: 1rem;
 }
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 768px) {
     nav a {
         padding: 10px 14px;
     }
