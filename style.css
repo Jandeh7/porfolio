@@ -92,8 +92,7 @@ nav a.active {
 .about-img img {
     width: 80%;
     margin: 20px auto;
-    border: 2px dotted;
-    padding: 2rem; 
+    box-shadow: 3px 3px 10px 6px #59c4c4;
 }
 
 .btn {
