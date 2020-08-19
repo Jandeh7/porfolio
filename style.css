@@ -1,9 +1,11 @@
+/* ROOT STYLES */
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
 }
 
+/* Page Body */
 body {
     padding: 0;
     margin: 0;
@@ -12,16 +14,20 @@ body {
     color: #e7fcfc;
 }
 
+/* HEADER SECTION */
+
 .heading {
     height: 6rem;
     width: 100%;
     background-color: rgba(28, 133, 133, 0.2);
 }
 
+/* Header Logo */
 .heading h1 {
     display: none;
 }
 
+/* Navbar section */
 nav {
     float: right;
 }
@@ -61,6 +67,8 @@ nav a.active {
     clear: both;
 }
 
+/* MAIN SECTION */
+/* About Me Section */
 .about-me {
     width: 80%;
     margin: 20px auto;
@@ -73,6 +81,8 @@ nav a.active {
     float: left;
 }
 
+/* About Me Text */
+
 .about-text {
     width: 100%;
     text-align: center;
@@ -84,6 +94,7 @@ nav a.active {
     line-height: 2.4rem;
 }
 
+/* About Me Image */
 .about-img {
     width: 100%;
     text-align: center;
@@ -95,6 +106,7 @@ nav a.active {
     box-shadow: 3px 3px 10px 6px #59c4c4;
 }
 
+/* About Me buttons */
 .btn {
     text-align: center;
     margin-top: 4rem;
@@ -107,6 +119,8 @@ nav a.active {
     border-radius: 8px;
     margin: 10px;
 }
+
+/* Skills Section */
 
 .skills {
     background: #59c4c4;
@@ -124,8 +138,8 @@ nav a.active {
     width: 40%;
 }
 
+/* Progress bar Styling */
 progress[value] {
-    /* Reset the default appearance */
     -webkit-appearance: none;
     appearance: none;
     width: 200px;
@@ -148,10 +162,11 @@ progress[value]::-webkit-progress-value {
                                  rgba(0, 0, 0, .25)),
          -webkit-linear-gradient(left, #0e1f1f, #59c4c4);
   
-      border-radius: 2px; 
-      background-size: 35px 20px, 100% 100%, 100% 100%;
-  }
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
 
+/* Projects Section */
 .projects {
     width: 80%;
     margin: 0 auto;
@@ -167,6 +182,8 @@ progress[value]::-webkit-progress-value {
     margin-bottom: 4rem;
 }
 
+/* FOOTER SECTION */
+ /* Footer Subscribe Form */
 .subscribe {
     padding: 30px;
 }
@@ -213,6 +230,7 @@ input:focus {
     outline: none;
 }
 
+/* Footer contact links */
 a {
     text-decoration: none;
     color: #e7fcfc;
@@ -243,11 +261,14 @@ a {
 color: #59c4c4;
 }
 
+/* Footer Copyright */
 .foot p {
     text-align: center;
     font-size: 1rem;
 }
 
+
+/* For Media Screens 768px and above */
 @media screen and (min-width: 768px) {
     nav a {
         padding: 10px 14px;
@@ -279,6 +300,8 @@ color: #59c4c4;
         display: inline-block;
     }
 }
+
+/*For Media Screen 992px and above */
 
 @media (min-width: 992px) {
     .project-card {
