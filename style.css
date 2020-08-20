@@ -269,6 +269,7 @@ color: #59c4c4;
 
 
 /* For Media Screens 768px and above */
+
 @media screen and (min-width: 768px) {
     nav a {
         padding: 10px 14px;
