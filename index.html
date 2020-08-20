@@ -6,7 +6,7 @@
     <title>Jane Andeh</title>
     <link rel="stylesheet" href="style.css">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/eeef2d167e.js" crossorigin="anonymous"></script>
 </head>
@@ -14,28 +14,32 @@
 
     <!-- Header Section -->
     <header class="heading">
-        <h1>JAE</h1>
-        <nav>
-            <ul>
-                <li><a class="active" href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Let's Talk!</a></li>
-            </ul>
-        </nav>
+        <div class="flex-nav">
+            <div class="nav-box box1">
+                <h1>JAE</h1>
+            </div>
+            <div class="nav-box box2">
+                <div class="flex-list">
+                    <span class="list-box first-box"><a class="active" href="#about">About Me</a></span>
+                    <span class="list-box"><a href="#skills">Skills</a></span>
+                    <span class="list-box"><a href="#projects">Projects</a></span>
+                    <span class="list-box"><a href="#contact">Let's Talk!</a></span>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Main Section -->
     <main class="clearfix">
 
         <!-- About Me Section -->
-        <section class="about-me clearfix" id="about">
-            <div class="about-img">
-                <img src="img/about-img.jpeg" alt="">
-            </div>
+        <section id="about">
+            <div class="about-container">
+                <div class="box box-img">
+                    <img src="img/about-img.jpeg" alt="">
+                </div>
 
-            <div class="about-text">
-                <div class="about-t">
+                <div class="box box-text">
                     <div>
                         <h2>Hi! I'm Jane Andeh.</h2>
                         <p>An enthusiastic front-end web developer with experience in translating 
@@ -49,7 +53,6 @@
                     </div>
                 </div>
             </div>
-            
         </section>
 
         <!-- My Skills Section -->
@@ -80,25 +83,26 @@
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <h3>My Recent Projects</h3>
-            <div class="project-card">
-                <div class="first">
-                    <iframe scrolling="no" src="https://game-applanding.netlify.app/" frameborder="0" height="200" title="Landing Page"></iframe>
+            <div class="project-container">
+                <div class="pro-box">
+                    <iframe scrolling="no" src="https://game-applanding.netlify.app/" frameborder="0" title="Game App Landing Page"></iframe>
                     <p><a href="https://game-applanding.netlify.app/" target="iframe_a">Game App Landing Page</a></p>
                 </div>
-                <div class="second">
-                    <iframe scrolling="no" src="https://beau-hngi.herokuapp.com" frameborder="0" height="200" title="Landing Page"></iframe>
+                <div class="pro-box">
+                    <iframe scrolling="no" src="https://beau-hngi.herokuapp.com" frameborder="0" title="Beauty App Landing Page"></iframe>
                     <p><a href="https://beau-hngi.herokuapp.com" target="iframe_a">Beauty App Landing Page</a></p>
                 </div>
-                <div class="third">
-                    <iframe scrolling="no" src="https://fylo-frontendmasters.vercel.app/" frameborder="0" height="200" title="Landing Page"></iframe>
+                <div class="pro-box">
+                    <iframe scrolling="no" src="https://fylo-frontendmasters.vercel.app/" frameborder="0" title="Frontend Masters Challenge"></iframe>
                     <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">Frontend Masters Challenge</a></p>
                 </div>
-                <div class="fourth">
-                    <iframe scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" height="200" title="Landing Page"></iframe>
+                <div class="pro-box">
+                    <iframe scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" title="Sign-up Form"></iframe>
                     <p><a href="https://tiidelab-signup.netlify.app/" target="iframe_a">Sign-up Form</a></p>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer Section -->
@@ -118,7 +122,7 @@
 
         <!-- Social Media Contacts -->
         <div class="contact">
-            <h3>Contact Me</h3>
+            <h3>Contact</h3>
             <ul class="">
                 <li><a href="tel:+2347067977733" target="_blank"><i class="fas fa-spin fa-phone"> </i> <span>+2347067977733</span></a></li>
                 <li><a href="https://github.com/Jandeh7" target="_blank"><i class="fab fa-spin fa-github"> </i> <span>Jandeh7</span></a></li>

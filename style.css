@@ -17,94 +17,86 @@ body {
 /* HEADER SECTION */
 
 .heading {
-    height: 6rem;
+    height: 6.5rem;
     width: 100%;
-    background-color: rgba(28, 133, 133, 0.2);
+    background-color: rgba(28, 133, 133, 0.6);
+    position: fixed;
+    top: 0;
+}
+
+.flex-nav {
+    display: flex;
 }
 
 /* Header Logo */
-.heading h1 {
+.box1 {
     display: none;
 }
 
 /* Navbar section */
-nav {
-    float: right;
+.box2 {
+    width: 100%;
 }
 
-nav ul {
-    padding-left: 0px;  
-}
-
-nav li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 auto;
-    line-height: 4rem;
-}
-
-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #e7fcfc;
-    font-size: 1.5rem;
-    padding: 10px;
+.flex-list {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
-nav a:hover,
-nav a.active {
+.list-box {
+    width: 25%;
+    padding: 20px 0px;
+}
+
+.first-box,
+.list-box:hover {
     background-color: #59c4c4;
-    border-radius: 5px;
-    text-align: center;
     color: #0e1f1f;
     transition: .6s;
 }
 
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
+.list-box a{
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 1.8rem;
 }
+
 
 /* MAIN SECTION */
+
+main {
+    margin-top: 10rem;
+}
+
 /* About Me Section */
-.about-me {
-    width: 80%;
-    margin: 20px auto;
-    font-size: 1.6rem;
-    box-sizing: border-box;
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
-.about-text,
-.about-img {
-    float: left;
-}
-
-/* About Me Text */
-
-.about-text {
-    width: 100%;
+.box {
+    padding: 20px;
     text-align: center;
-}
-
-.about-t {
     width: 80%;
-    margin: 20px auto;
-    line-height: 2.4rem;
+    margin: 0 auto;
 }
 
 /* About Me Image */
-.about-img {
-    width: 100%;
-    text-align: center;
-}
-
-.about-img img {
+.box-img img {
     width: 80%;
-    margin: 20px auto;
+    border-radius: 10px;
     box-shadow: 3px 3px 10px 6px #59c4c4;
 }
+
+/* About Me Text */
+.box-text {
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
 
 /* About Me buttons */
 .btn {
@@ -118,6 +110,7 @@ nav a.active {
     padding: 1rem 1.4rem;
     border-radius: 8px;
     margin: 10px;
+    white-space: nowrap;
 }
 
 /* Skills Section */
@@ -167,19 +160,25 @@ progress[value]::-webkit-progress-value {
 }
 
 /* Projects Section */
+
 .projects {
-    width: 80%;
-    margin: 0 auto;
     font-size: 1.6rem;
     text-align: center;
-    padding: 30px;
 }
 
-.first,
-.second,
-.third,
-.fourth {
-    margin-bottom: 4rem;
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pro-box {
+    width: 320px;
+    margin: 20px auto;
+}
+
+iframe{
+    height: 400px;
 }
 
 /* FOOTER SECTION */
@@ -271,64 +270,30 @@ color: #59c4c4;
 /* For Media Screens 768px and above */
 
 @media screen and (min-width: 768px) {
-    nav a {
-        padding: 10px 14px;
-    }
 
-    .heading h1 {
+    .box1 {
         display: inline-block;
-        line-height: 1rem;
-        font-size: 4.5rem;
+        line-height: 0.6rem;
+        font-size: 3rem;
         margin-left: 20px;
         font-family: 'Indie Flower', cursive;
     }
-
-    .about-text,
-    .about-img {
-        width: 50%;
+    
+    .box2 {
+        width: 70%;
+        margin-left: auto;
     }
 
-    .about-img img {
+    .about-container {
+        flex-wrap: nowrap;
+    }
+
+    .box-img img {
         max-width: 350px;
         max-height: 500px;
     }
 
-    .about-text {
-        margin-top: 5rem;
-    }
-
     .contact span {
         display: inline-block;
-    }
-}
-
-/*For Media Screen 992px and above */
-
-@media (min-width: 992px) {
-    .project-card {
-        display: grid;
-        grid-gap: 30px;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        grid-template-areas:
-        "a b"
-        "c d";
-    }
-
-    .first {
-        grid-area: a;
-    }
-
-    .second {
-        grid-area: b;
-        margin-bottom: 0;
-    }
-
-    .third {
-        grid-area: c;
-    }
-
-    .fourth {
-        grid-area: d;
     }
 }
