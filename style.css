@@ -82,7 +82,45 @@ body {
 /* MAIN SECTION */
 
 main {
-    margin-top: 10rem;
+    /* margin-top: 5rem; */
+}
+
+.hero {
+    text-align: center;
+    height: 100vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    background: url(./img/hero-img.jpg) no-repeat center center/cover;
+}
+
+.intro {
+    margin: 0 auto;
+    height: 30%; 
+}
+
+.intro h1 {
+    overflow: hidden;
+    border-right: .15em solid var(--primary-color);
+    font-size: 2.5rem;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(22, end),
+      blink-caret .75s step-end infinite;
+    white-space: nowrap;
+}
+
+ /* The typing effect */
+ @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0e1f1f }
 }
 
 /* About Me Section */
@@ -90,7 +128,8 @@ main {
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    align-items: center;
+    padding: 3rem 0;
 }
 
 .box {
@@ -109,31 +148,8 @@ main {
 
 /* About Me Text */
 .box-text {
-    line-height: 2.4rem;
+    line-height: 2.6rem;
     font-size: 1.6rem;
-}
-
-.box-text h2 {
-    overflow: hidden;
-    border-right: .15em solid #e7fcfc;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
-      typing 3.5s steps(22, end),
-      blink-caret .75s step-end infinite;
-}
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #e7fcfc }
 }
 
 /* About Me buttons */
