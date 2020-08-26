@@ -169,8 +169,9 @@ main {
 }
 
 .tech-skills i {
-    width: 40%;
-    text-align: left;
+    width: 45%;
+    white-space: nowrap;
+    text-align: center;
 }
 
 /* Progress bar Styling */
@@ -271,11 +272,19 @@ iframe{
     text-align: left;
 }
 
-.test-msg span {
+.test-msg span:first-child {
     font-size: 4rem;
-    font-family: ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding-right: 10px;
 }
+
+.test-msg span:last-child {
+    font-size: 4rem;
+    align-self: flex-end;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 10px;
+}
+
 
 /* FOOTER SECTION */
  /* Footer Subscribe Form */
@@ -404,6 +413,10 @@ color: var(--secondary-color);
         max-height: 500px;
     }
 
+    .tech-skills i {
+        text-align: left;
+    }
+    
     .contact span {
         display: inline-block;
     }
