@@ -14,22 +14,17 @@
 <body id="home">
 
     <!-- Header Section -->
-    <header class="heading">
-        <div class="flex-nav">
-            <div class="nav-box box1">
-                <h1><a href="#home">JAE</a></h1>
-            </div>
-            <div class="nav-box box2">
-                <div class="flex-list">
-                    <span class="list-box first-box"><a class="active" href="#about">About</a></span>
-                    <span class="list-box"><a href="#skills">Skills</a></span>
-                    <span class="list-box"><a href="#projects">Projects</a></span>
-                    <span class="list-box"><a href="#testimonials">Testimonials</a></span>
-                    <span class="list-box"><a href="#contact">Let's Talk!</a></span>
-                </div>
-            </div>
-            
+    <header class="heading flex-nav">
+        <span class="box1"><a href="#home">JAE</a></span>
+        <a href="javascript:myJsFunc();" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+        <div class="flex-list" id="navBar">
+            <span class="list-box first-box"><a class="active" href="#about">About</a></span>
+            <span class="list-box"><a href="#skills">Skills</a></span>
+            <span class="list-box"><a href="#projects">Projects</a></span>
+            <span class="list-box"><a href="#testimonials">Testimonials</a></span>
+            <span class="list-box"><a href="#contact">Let's Talk!</a></span> 
         </div>
+        
     </header>
 
     <!-- Main Section -->
@@ -240,5 +235,19 @@
         <!-- Copyright -->
         <p>&copy;2020 Jandeh</p>
     </footer>
+
+
+    
+    <script>
+        function myFunction() {
+            var x = 
+            document.getElementById("navBar");
+            if (x.className === "flex-list") {
+                x.className += " menu";
+            } else {
+                x.className = "flex-list";
+            }
+        }
+    </script>
 </body>
 </html>

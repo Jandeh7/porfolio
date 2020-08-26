@@ -23,8 +23,6 @@ body {
 /* HEADER SECTION */
 
 .heading {
-    height: 6.1rem;
-    width: 100%;
     background-color: rgba(28, 133, 133, 0.6);
     position: sticky;
     top: 0;
@@ -32,45 +30,54 @@ body {
 
 .flex-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 /* Header Logo */
 .box1 {
-    display: none;
+    font-family: 'Indie Flower', cursive;
+    padding: 1.5rem;
+}
+
+.box1 a {
+    font-size: 3rem;
 }
 
 /* Navbar section */
-.box2 {
-    width: 100%;
-}
 
 .flex-list {
-    display: flex;
-    /* justify-content: space-between; */
-    text-align: center;
-}
-
-.list-box {
-    width: 25%;
-    padding: 20px 0px;
-}
-
-.first-box {
     display: none;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
+.list-box{
+    padding: 1rem 0;
+    /* width: 100%; */
+}
+
 .list-box:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    transition: .6s;
+    background: var(--secondary-color);
+    border-radius: 10px;
 }
 
 .list-box a{
     text-transform: uppercase;
-    white-space: nowrap;
     font-size: 1.4rem;
 }
 
+.icon {
+    padding: 1.5rem;
+}
 
 /* MAIN SECTION */
 
@@ -107,11 +114,11 @@ main {
 }
 
 .box-text h2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #e7fcfc; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    border-right: .15em solid #e7fcfc;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
     animation: 
       typing 3.5s steps(22, end),
       blink-caret .75s step-end infinite;
@@ -383,25 +390,22 @@ color: var(--secondary-color);
 
 @media screen and (min-width: 768px) {
 
-    .box1 {
-        display: inline-block;
-        margin-left: 20px;
-        font-family: 'Indie Flower', cursive;
-    }
-
-    .box1 a {
-        font-size: 3rem;
-    }
-    
-    .box2 {
+    #navBar {
+        display: flex;
         width: 70%;
         margin-left: auto;
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: nowrap;
+        padding: 1.5rem;
+    }
+    
+    .list-box{
+        width: 20%;
     }
 
-    .first-box {
-        display: inline;
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
+    .icon {
+        display: none;
     }
 
     .about-container {
