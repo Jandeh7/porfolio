@@ -43,13 +43,24 @@
 .water:before{
     border-radius: 45%;
     background:rgba(255,255,255,.7);
-    animation:wave 5s linear infinite;
+    -webkit-animation:wave 5s linear infinite;
+            animation:wave 5s linear infinite;
 }
 
 .water:after{
     border-radius: 35%;
     background:rgba(255,255,255,.3);
-    animation:wave 5s linear infinite;
+    -webkit-animation:wave 5s linear infinite;
+            animation:wave 5s linear infinite;
+}
+
+@-webkit-keyframes wave{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes wave{
