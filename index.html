@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane Andeh</title>
-    <link rel="stylesheet" href="style.css">
-        <!-- Google Fonts -->
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- loader Stylesheet -->
+    <link rel="stylesheet" href="./css/loader.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/eeef2d167e.js" crossorigin="anonymous"></script>
+   
 </head>
 
 <body id="home">
 
-    <!-- Header Section -->
+    <!-- loader -->
+    <div class="loader">
+        <div class="water"></div>
+    </div>
+
+    <!-- Header Section and Navigation -->
     <header class="heading flex-nav">
+        <!-- Logo -->
         <span class="box1"><a href="#home">JAE</a></span>
-        <a href="javascript:myJsFunc();" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+        <!-- Hamburger Menu -->
+        <a href="javascript:myJsFunc();" class="icon" onclick="myFunction()">
+            <!-- Toggler icon -->
+            <span class="toggler"><i class="fas fa-bars"></i></span>
+        </a>
+        <!-- Navigation list Items -->
         <div class="flex-list" id="navBar">
             <span class="list-box first-box"><a class="active" href="#about">About</a></span>
             <span class="list-box"><a href="#skills">Skills</a></span>
             <span class="list-box"><a href="#projects">Projects</a></span>
             <span class="list-box"><a href="#testimonials">Testimonials</a></span>
+            <span class="list-box"><a href="#gallery">Network</a></span>
             <span class="list-box"><a href="#contact">Let's Talk!</a></span> 
         </div>
         
@@ -30,19 +44,32 @@
     <!-- Main Section -->
     <main>
 
-        <section class="hero">
+        <!-- Hero/Landing Section -->
+        <section class="hero" id="hero">
+            <!-- Introduction with the Typing Animation Effect -->
             <div class="intro">
                 <h1>Hi! I'm Jane Andeh.</h1>
             </div>
+            <!-- Intro Buttons -->
+            <div class="btn intro-btn">
+                <a class="" href="/andehjane-resume.pdf" target="_blank">Resume</a>
+                <a class="" href="#contact">Hire Me!</a>
+            </div>
+
         </section>
 
         <!-- About Me Section -->
-        <section id="about">
+        <section id="about" class="about-me">
+            <h3>About Me</h3>
+
             <div class="about-container">
+                
+                <!-- About Me Image -->
                 <div class="box box-img">
                     <img src="img/about-img.jpeg" alt="">
                 </div>
 
+                <!-- About Me Text -->
                 <div class="box box-text">
                     <div>
                         <p>I'm an enthusiastic front-end web developer with experience in translating 
@@ -50,9 +77,11 @@
                             scalable and user-friendly web applications using the core web tools 
                             including but not limited to HTML, CSS and JavaScript.</p>
                     </div>
+
+                    <!-- About Me Buttons -->
                     <div class="btn">
-                        <a class="about-btn" href="/andehjane-resume.pdf" target="_blank">Resume</a>
-                        <a class="about-btn" href="mailto:andehjane@gmail.com">Hire Me!</a>
+                        <a class="about-btn" href="#projects">Check Out My Work</a>
+                        <a class="about-btn" href="#contact">Work With Me!</a>
                     </div>
                 </div>
             </div>
@@ -63,6 +92,7 @@
 
             <h3>My Skills</h3>
 
+            <!-- My skills List and Progress Bars -->
             <div class="skills-container">
                 <div class="skills-box">
                     <div class="tech-skills">
@@ -105,8 +135,12 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
+
             <h3>My Recent Projects</h3>
+
             <div class="project-container">
+
+                <!-- Project frames and WebLinks -->
                 <div class="pro-box">
                     <iframe scrolling="no" src="https://game-applanding.netlify.app/" frameborder="0" title="Game App Landing Page"></iframe>
                     <p>Game App Landing Page</p>
@@ -144,9 +178,20 @@
             </div>
         </section>
 
+        
+        <!-- Back to top Sticky Button -->
+        <section class="back">
+            <div class="backToTop"><a href="#hero" class="btt-btn"><i class="fas fa-arrow-up"></i> Top</a></div>
+        </section>
+
+        <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials">
+
             <h3>Testimonials</h3>
+
             <div class="test-container">
+
+                <!-- Testimonial Cards With Round Images-->
                 <div class="test-card">
                     <div class="test-head">
                         <img src="img/testimonial-img.png" alt="">
@@ -209,26 +254,115 @@
                 
             </div>
         </section>
+
+
+        <!-- Masonry Grid Layout -->
+        <section class="gallery" id="gallery">
+            <h3>My Tech Community</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="./img/grid-img1.jpeg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item col--3x">
+                    <img src="./img/grid-img2.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img3.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img4.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img5.jpeg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img6.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item  col--2x">
+                    <img src="./img/grid-img11.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item col--2x">
+                    <img src="./img/grid-img15.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img9.jpeg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img14.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item col--3x">
+                    <img src="./img/grid-img19.jpeg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img12.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img13.jpeg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img18.jpeg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img16.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item col--2x">
+                    <img src="./img/grid-img17.jpg" alt="photo-gallery" class="content">
+                </div>
+
+                <div class="grid-item">
+                    <img src="./img/grid-img8.jpg" alt="photo-gallery" class="content">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="form" id="contact">
+             <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Let's talk!</h3>
+                <form action="" class="subscribe-form" method="POST" data-netlify="true">
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                    <input type="email" class="form-input" placeholder="Your Email" required>
+                    <input type="number" class="form-input" placeholder="Your Phone Number" required>
+
+                    <textarea class="form-input" id="form-msg" form="subscribe" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    <input type="submit" class="submit form-input" value="Signup" id="submit">
+                </form>
+            </div>
+        </section>
     </main>
+    
 
     <!-- Footer Section -->
-    <footer id="contact" class="foot">
-
-        <!-- Email Subscribe -->
+    <footer class="foot">
+            
         <div class="subscribe">
-            <h3>Let's talk!</h3>
-            <form action="" class="subscribe-form" id="subscribe" method="POST" data-netlify="true">
-                <input type="text" class="form-name" id="name" placeholder="Your Name">
-                <input type="email" class="form-email" id="email" placeholder="Your Email" required>
-                
-                <textarea class="form-message" id="form-msg" form="subscribe" cols="30" rows="5" placeholder="Your Message"></textarea>
-                <input type="submit" class="submit" value="Signup" id="submit">
+            <h3>Stay updated on my latest projects and tech-adventures</h3>
+
+            <form action="" class="subscribe-form" method="POST" data-netlify="true">
+                <input type="email" name="email" placeholder="email" class="subscribe-email" required>
+                <input type="submit" value="Subscribe" class="subscribe-submit">
             </form>
         </div>
 
         <!-- Social Media Contacts -->
         <div class="contact">
-            
+            <!-- Social Media Links -->
             <ul class="">
                 <li><a href="tel:+2347067977733" target="_blank"><i class="fas fa-spin fa-phone"> </i> <span>+2347067977733</span></a></li>
                 <li><a href="https://github.com/Jandeh7" target="_blank"><i class="fab fa-spin fa-github"> </i> <span>Jandeh7</span></a></li>
@@ -242,17 +376,11 @@
     </footer>
 
 
-    
-    <script>
-        function myFunction() {
-            var x = 
-            document.getElementById("navBar");
-            if (x.className === "flex-list") {
-                x.className += " menu";
-            } else {
-                x.className = "flex-list";
-            }
-        }
-    </script>
+    <!-- Font Awesome Icons CDN-->
+    <script src="https://kit.fontawesome.com/eeef2d167e.js" crossorigin="anonymous"></script>
+
+    <!-- Main Js File -->
+    <script src="./js/index.js"></script>
+
 </body>
 </html>
