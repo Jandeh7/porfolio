@@ -13,6 +13,7 @@ window.addEventListener('load', function (event) {
     }
 });
 
+
 // Hamburger menu
 
 // Variables for the myFunction hamburger menu function
