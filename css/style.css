@@ -1,7 +1,7 @@
 /* ROOT STYLES */
 :root {
     --primary-color: #0e1f1f;
-    --secondary-color: #59c4c4;
+    --secondary-color: #b4eded;
     --light-color: #e7fcfc;
 }
 
@@ -23,10 +23,11 @@ body {
 /* HEADER SECTION */
 
 .heading {
-    background-color: rgba(28, 133, 133, 0.6);
+    background-color: rgba(4, 26, 26, 0.9);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 .flex-nav {
@@ -61,24 +62,31 @@ body {
     padding: 1.5rem;
 }
 
+.menu:hover {
+    color: var(--primary-color);
+}
+
 .list-box{
     padding: 1rem 0;
-    /* width: 100%; */
+    color: var(--secondary-color);
 }
 
 .list-box a {
     display: inline-block;
     padding: 0 2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
 }
 
 .list-box:hover {
     background: var(--secondary-color);
     border-radius: 10px;
+    color: var(--primary-color);
 }
 
-.list-box a{
-    text-transform: uppercase;
-    font-size: 1.4rem;
+.list-box a:hover {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .icon {
@@ -111,12 +119,12 @@ body {
     letter-spacing: .15em;
     
     -webkit-animation: 
-      typing 3.5s steps(22, end) 7000ms backwards,
-      blink-caret .75s step-end 7000ms infinite backwards;
+      typing 3.5s steps(22, end) 4500ms backwards,
+      blink-caret .75s step-end 4500ms infinite backwards;
     
             animation: 
-      typing 3.5s steps(22, end) 7000ms backwards,
-      blink-caret .75s step-end 7000ms infinite backwards;
+      typing 3.5s steps(22, end) 4500ms backwards,
+      blink-caret .75s step-end 4500ms infinite backwards;
     white-space: nowrap;
 }
 
@@ -156,6 +164,7 @@ body {
 
 .intro-button:hover {
     color: var(--secondary-color);
+    background: var(--primary-color);
     box-shadow: 3px 3px 10px 6px var(--secondary-color);
 }
 
@@ -232,56 +241,63 @@ body {
     color: var(--primary-color);
     text-align: center;
     font-size: 1.8rem;
-    padding: 30px 10px;
+    padding: 10px 10px 30px;
 }
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.skills-box {
-    width: 400px;
+    width: 95%;
     margin: 0 auto;
 }
 
-.tech-skills {
-    margin-bottom: 1.4em;
+.skills-container span {
+    display: block;
+    text-align: left;
+    padding-bottom: 10px;
 }
 
-.tech-skills i {
+.skills-list {
     width: 45%;
-    white-space: nowrap;
-    text-align: center;
+    margin-left: auto;
 }
 
-/* Progress bar Styling */
-progress[value] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-    width: 200px;
-    height: 10px;
+.skills-icon i {
+    display: block;
+    width: 70px;
+    position: relative;
+    padding: 9px 10px 10px;
+    animation: animated_icon 5s infinite;
 }
 
-progress[value]::-webkit-progress-bar {
-    background-color: #eee;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-
-progress[value]::-webkit-progress-value {
-    background-image:
-         -webkit-linear-gradient(-45deg, 
-                                 transparent 33%, rgba(0, 0, 0, .1) 33%, 
-                                 rgba(0,0, 0, .1) 66%, transparent 66%),
-         -webkit-linear-gradient(top, 
-                                 rgba(255, 255, 255, .25), 
-                                 rgba(0, 0, 0, .25)),
-         -webkit-linear-gradient(left, #0e1f1f, #59c4c4);
-  
-    border-radius: 2px; 
-    background-size: 35px 20px, 100% 100%, 100% 100%;
+@keyframes animated_icon {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+        color:  #e34c26;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 120px;
+        color: #F0DB4F;
+    }
+    55% {
+        transform: rotate(180deg);
+        left: 120px;
+        color: #602C50;
+    }
+    70% {
+        transform: rotate(320deg);
+        left: 120px;
+        color: #264de4; 
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
 }
 
 /* Projects Section */
@@ -301,12 +317,19 @@ progress[value]::-webkit-progress-value {
 .pro-box {
     width: 320px;
     margin: 3rem auto;
+    padding: 0 16px;
 }
 
-iframe{
-    height: 400px;
+.iframe{
+    height: 300px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px 6px var(--secondary-color);
+}
+
+.iframe img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
 }
 
 /* Testimonial Section */
@@ -314,7 +337,6 @@ iframe{
 .testimonials {
     background: var(--secondary-color);
     text-align: center;
-    font-size: 1.6rem;
     padding: 3rem 1.5rem;
     color: var(--primary-color);
 }
@@ -328,7 +350,6 @@ iframe{
     width: 280px;
     margin: 2rem auto;
     background: var(--light-color);
-    border: 1px solid var(--primary-color);
     border-radius: 1rem;
     padding: 2rem;
     box-shadow:
@@ -336,22 +357,34 @@ iframe{
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 41.8px 33.4px rgba(0, 0, 0, 0.09),
+    0 100px 80px rgba(0, 0, 0, 0.2);
 }
 
 .test-head {
     border-bottom: 1px solid var(--primary-color);
 }
 
-.test-head img {
-    width: 40%;
+.test-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.test-img img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
 .test-msg {
     display: flex;
     text-align: left;
+}
+
+.test-msg p {
+    font-style: 1rem;
 }
 
 .test-msg span:first-child {
@@ -573,6 +606,10 @@ color: var(--secondary-color);
 
 @media screen and (min-width: 768px) {
 
+    html{
+        font-size: 12px;
+    }
+
     #navBar {
         display: flex;
         width: 85%;
@@ -588,8 +625,19 @@ color: var(--secondary-color);
         white-space: nowrap;
     }
 
+    .list-box a {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+
     .icon {
         display: none;
+    }
+
+    .intro-button {
+        background-color: var(--light-color);
+        color: var(--primary-color);
+        box-shadow: 2px 2px 10px 4px;
     }
 
     .about-container {
@@ -601,8 +649,40 @@ color: var(--secondary-color);
         max-height: 500px;
     }
 
-    .tech-skills i {
-        text-align: left;
+    .skills-icon i {
+        padding: 12px 10px 10px;
+        animation: animated_icon 5s infinite;
+    }
+    
+    @keyframes animated_icon {
+        0% {
+            transform: rotate(0deg);
+            left: 0px;
+        }
+        25% {
+            transform: rotate(20deg);
+            left: 0px;
+            color:  #e34c26;
+        }
+        50% {
+            transform: rotate(0deg);
+            left: 250px;
+            color: #F0DB4F;
+        }
+        55% {
+            transform: rotate(180deg);
+            left: 250px;
+            color: #602C50;
+        }
+        70% {
+            transform: rotate(320deg);
+            left: 250px;
+            color: #264de4; 
+        }
+        100% {
+            transform: rotate(-360deg);
+            left: 0px;
+        }
     }
     
     .contact span {

@@ -23,7 +23,7 @@
 .water{
     width: 200px;
     height: 200px;
-    background-color: var(--secondary-color);
+    background-color: #27c2c2;
     border-radius: 50%;
     position: relative;
     box-shadow: inset 0 0 30px 0 rgba(0,0,0,.5), 0 4px 10px 0 rgba(0,0,0,.5);

@@ -25,7 +25,7 @@
         <!-- Logo -->
         <span class="box1"><a href="#home">JAE</a></span>
         <!-- Hamburger Menu -->
-        <a href="javascript:myJsFunc();" class="icon" onclick="myFunction()">
+        <a href="javascript:myFunction();" class="icon" onclick="myFunction()">
             <!-- Toggler icon -->
             <span class="toggler"><i class="fas fa-bars"></i></span>
         </a>
@@ -92,43 +92,35 @@
 
             <h3>My Skills</h3>
 
-            <!-- My skills List and Progress Bars -->
+            <!-- My skills List -->
             <div class="skills-container">
-                <div class="skills-box">
-                    <div class="tech-skills">
-                        <i class="fab fa-html5"> HTML5 </i>
-                        <progress max="100" value="70"></progress>
-                    </div>
-                    <div class="tech-skills">
-                        <i class="fab fa-css3-alt"> CSS3 </i>
-                        <progress max="100" value="65"></progress>
-                    </div>
-                    <div class="tech-skills">
-                        <i class="fab fa-js"> JavaScript </i>
-                        <progress max="100" value="55"></progress>
-                    </div>
-                    <div class="tech-skills">
-                        <i class="fab fa-bootstrap"> Bootstrap </i>
-                        <progress max="100" value="65"></progress>
-                    </div>
+                <div class="skills-icon">
+                    <i class="fab fa-html5"> </i>
+                    <i class="fab fa-css3-alt"> </i>
+                    <i class="fab fa-js"> </i>
+                    <i class="fab fa-bootstrap"> </i>
+                    <i class="fab fa-git"> </i>    
+                    <i class="far fa-window-restore"> </i>    
+                    <i class="fab fa-chrome"> </i>   
+                    <i class="far fa-file-code"> </i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fa fa-commenting"> </i>
+                    <i class="fas fa-tasks"> </i>
+                    <i class="fas fa-users"> </i>
                 </div>
-                <div class="skills-box">
-                    <div class="tech-skills">
-                        <i class="fab fa-git"> Version Control </i>
-                        <progress max="100" value="70"></progress>
-                    </div>
-                    <div class="tech-skills">
-                        <i class="far fa-window-restore"> Responsive design </i>
-                        <progress max="100" value="70"></progress>
-                    </div>
-                    <div class="tech-skills">
-                        <i class="fab fa-chrome"> Developer tools </i>
-                        <progress max="100" value="75"></progress>
-                    </div>
-                    <div class="tech-skills">
-                        <i class="far fa-file-code"> Debugging </i>
-                        <progress max="100" value="75"></progress>
-                    </div>
+                <div class="skills-list">
+                    <span> HTML5</span>
+                    <span> CSS3</span>
+                    <span> JavaScript</span>
+                    <span> Bootstrap</span>
+                    <span> Version Control</span>
+                    <span> Responsive design</span>
+                    <span> Developer tools</span>
+                    <span> Debugging</span>
+                    <span> Problem solving</span>
+                    <span> Communication</span>
+                    <span> Task Management</span>
+                    <span> Team Building</span>
                 </div>
             </div>
         </section>
@@ -142,35 +134,36 @@
 
                 <!-- Project frames and WebLinks -->
                 <div class="pro-box">
-                    <iframe scrolling="no" src="https://game-applanding.netlify.app/" frameborder="0" title="Game App Landing Page"></iframe>
+                    <div class="iframe">
+                        <img src="./img/Game_app.PNG" alt="">
+                    </div>
                     <p>Game App Landing Page</p>
                     <a class="about-btn" href="https://game-applanding.netlify.app/" target="_blank">Visit Site</a> 
                     <a class="about-btn" href="https://github.com/Jandeh7/envato-applanding" target="_blank"><i class="fab fa-github"></i> Repo</a> 
                 </div>
 
                 <div class="pro-box">
-                    <iframe scrolling="no" src="https://beau-hngi.herokuapp.com" frameborder="0" title="Beauty App Landing Page"></iframe>
+                    <div class="iframe">
+                        <img src="./img/beauty_app.PNG" alt="">
+                    </div>                    
                     <p>Beauty App Landing Page</p>
                     <a class="about-btn" href="https://beau-hngi.herokuapp.com" target="_blank">Visit Site</a> 
                     <a class="about-btn" href="https://github.com/Jandeh7/beau-landing" target="_blank"><i class="fab fa-github"></i> Repo</a> 
                 </div>
 
                 <div class="pro-box">
-                    <iframe scrolling="no" src="https://fylo-frontendmasters.vercel.app/" frameborder="0" title="Frontend Masters Challenge"></iframe>
+                    <div class="iframe">
+                        <img src="./img/fylo_challenge.PNG" alt="">
+                    </div>
                     <p>Frontend Masters Challenge</p>
                     <a class="about-btn" href="https://fylo-frontendmasters.vercel.app/" target="_blank">Visit Site</a> 
                     <a class="about-btn" href="https://github.com/Jandeh7/fylo-frontendmasters" target="_blank"><i class="fab fa-github"></i> Repo</a> 
                 </div>
 
                 <div class="pro-box">
-                    <iframe scrolling="no" src="https://tiidelab-signup.netlify.app/" frameborder="0" title="Sign-up Form"></iframe>
-                    <p>Sign-up Form</p>
-                    <a class="about-btn" href="https://tiidelab-signup.netlify.app/" target="_blank">Visit Site</a> 
-                    <a class="about-btn" href="https://github.com/Jandeh7/signUp" target="_blank"><i class="fab fa-github"></i> Repo</a> 
-                </div>
-
-                <div class="pro-box">
-                    <iframe scrolling="no" src="https://four-card-frontendmentors.netlify.app/" frameborder="0" title="Four Card Feature Challenge"></iframe>
+                    <div class="iframe">
+                        <img src="./img/four_card_challenge.PNG" alt="">
+                    </div>
                     <p>Four Card Feature Challenge</p>
                     <a class="about-btn" href="https://four-card-frontendmentors.netlify.app/" target="_blank">Visit Site</a> 
                     <a class="about-btn" href="https://github.com/Jandeh7/four-card-feature" target="_blank"><i class="fab fa-github"></i> Repo</a> 
@@ -194,7 +187,9 @@
                 <!-- Testimonial Cards With Round Images-->
                 <div class="test-card">
                     <div class="test-head">
-                        <img src="img/testimonial-img1.jpg" alt="">
+                        <div class="test-img">
+                            <img src="img/testimonial-img1.jpg" alt="">
+                        </div>  
                         <h4>Promise Etumnu</h4>
                     </div>
                     <div class="test-msg">
@@ -209,7 +204,9 @@
 
                 <div class="test-card">
                     <div class="test-head">
-                        <img src="img/testimonial-img2.jpg" alt="">
+                        <div class="test-img">
+                            <img src="img/testimonial-img2.jpg" alt="">
+                        </div>
                         <h4>Anya Chima</h4>
                     </div>
                     <div class="test-msg">
@@ -225,7 +222,9 @@
 
                 <div class="test-card">
                     <div class="test-head">
-                        <img src="img/testimonial-img3.jpg" alt="">
+                        <div class="test-img">
+                            <img src="img/testimonial-img3.jpg" alt="">
+                        </div>
                         <h4>Eze Chinaza</h4>
                     </div>
                     <div class="test-msg">
@@ -239,7 +238,9 @@
 
                 <div class="test-card">
                     <div class="test-head">
-                        <img src="img/testimonial-img4.jpg" alt="">
+                        <div class="test-img">
+                            <img src="img/testimonial-img4.jpg" alt="">
+                        </div>
                         <h4>Ejiofor Oluchi</h4>
                     </div>
                     <div class="test-msg">
