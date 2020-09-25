@@ -266,7 +266,39 @@ body {
     width: 70px;
     position: relative;
     padding: 9px 10px 10px;
-    animation: animated_icon 5s infinite;
+    -webkit-animation: animated_icon 5s infinite;
+            animation: animated_icon 5s infinite;
+}
+
+@-webkit-keyframes animated_icon {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+        color:  #e34c26;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 120px;
+        color: #F0DB4F;
+    }
+    55% {
+        transform: rotate(180deg);
+        left: 120px;
+        color: #602C50;
+    }
+    70% {
+        transform: rotate(320deg);
+        left: 120px;
+        color: #264de4; 
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
 }
 
 @keyframes animated_icon {
@@ -651,7 +683,39 @@ color: var(--secondary-color);
 
     .skills-icon i {
         padding: 12px 10px 10px;
-        animation: animated_icon 5s infinite;
+        -webkit-animation: animated_icon 5s infinite;
+                animation: animated_icon 5s infinite;
+    }
+    
+    @-webkit-keyframes animated_icon {
+        0% {
+            transform: rotate(0deg);
+            left: 0px;
+        }
+        25% {
+            transform: rotate(20deg);
+            left: 0px;
+            color:  #e34c26;
+        }
+        50% {
+            transform: rotate(0deg);
+            left: 250px;
+            color: #F0DB4F;
+        }
+        55% {
+            transform: rotate(180deg);
+            left: 250px;
+            color: #602C50;
+        }
+        70% {
+            transform: rotate(320deg);
+            left: 250px;
+            color: #264de4; 
+        }
+        100% {
+            transform: rotate(-360deg);
+            left: 0px;
+        }
     }
     
     @keyframes animated_icon {
