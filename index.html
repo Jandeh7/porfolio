@@ -25,7 +25,7 @@
         <!-- Logo -->
         <span class="box1"><a href="#home">JAE</a></span>
         <!-- Hamburger Menu -->
-        <a href="javascript:myJsFunc();" class="icon" onclick="myFunction()">
+        <a class="icon" onclick="myFunction()">
             <!-- Toggler icon -->
             <span class="toggler"><i class="fas fa-bars"></i></span>
         </a>
@@ -91,36 +91,104 @@
         <section id="skills" class="skills">
 
             <h3>My Skills</h3>
-
-            <!-- My skills List -->
-            <div class="skills-container">
-                <div class="skills-icon">
-                    <i class="fab fa-html5"> </i>
-                    <i class="fab fa-css3-alt"> </i>
-                    <i class="fab fa-js"> </i>
-                    <i class="fab fa-bootstrap"> </i>
-                    <i class="fab fa-git"> </i>    
-                    <i class="far fa-window-restore"> </i>    
-                    <i class="fab fa-chrome"> </i>   
-                    <i class="far fa-file-code"> </i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <i class="fa fa-commenting"> </i>
-                    <i class="fas fa-tasks"> </i>
-                    <i class="fas fa-users"> </i>
+            <!-- Skills Flip Cards -->
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fab fa-html5" style="color: #e34c26;"> </i>
+                    </div>
+                    <div class="back">
+                        <span> HTML5</span>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <div class="skills-list">
-                    <span> HTML5</span>
-                    <span> CSS3</span>
-                    <span> JavaScript</span>
-                    <span> Bootstrap</span>
-                    <span> Version Control</span>
-                    <span> Responsive design</span>
-                    <span> Developer tools</span>
-                    <span> Debugging</span>
-                    <span> Problem solving</span>
-                    <span> Communication</span>
-                    <span> Task Management</span>
-                    <span> Team Building</span>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fab fa-css3-alt" style="color: #264de4;"> </i>
+                    </div>
+                    <div class="back">
+                        <span> CSS3</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fab fa-js-square" style="color: #F0DB4F;"></i>
+                    </div>
+                    <div class="back">
+                        <span> JavaScript</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fab fa-bootstrap" style="color: #602C50;"> </i>
+                    </div>
+                    <div class="back">
+                        <span> Bootstrap</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fab fa-git" style="color: #F1502F;"> </i> 
+                    </div>
+                    <div class="back">
+                        <span> Version Control</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="far fa-window-restore" style="color: #00FF00;"> </i>
+                    </div>
+                    <div class="back">
+                        <span> Responsive design</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fas fa-tools" style="color: #4c8bf5;"></i>
+                    </div>
+                    <div class="back">
+                        <span> Developer tools</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fas fa-exclamation-circle" style="color: #ff0033;"></i>
+                    </div>
+                    <div class="back">
+                        <span> Problem solving</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front ">
+                        <i class="fa fa-commenting" style="color: #FFD700;"> </i>
+                    </div>
+                    <div class="back">
+                        <span> Communication</span>
+                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
         </section>
@@ -171,9 +239,30 @@
             </div>
         </section>
 
+        <!-- Fixed Motion Background -->
+        <section class="motionbg">
+            <div class="background">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+        </section>
         
         <!-- Back to top Sticky Button -->
-        <section class="back">
+        <section class="backToTop-container">
             <div class="backToTop"><a href="#hero" class="btt-btn"><i class="fas fa-arrow-up"></i> Top</a></div>
         </section>
 
@@ -188,35 +277,21 @@
                 <div class="test-card">
                     <div class="test-head">
                         <div class="test-img">
-                            <img src="img/testimonial-img1.jpg" alt="">
-                        </div>  
-                        <h4>Promise Etumnu</h4>
-                    </div>
-                    <div class="test-msg">
-                        <span>"</span>
-                        <p>Jane contributes strongly in a team and her excellent 
-                            interpersonal skills enable her align well with team members. 
-                            She also enjoys imparting knowledge and giving detailed information 
-                            and explanations on questions/topics. </p>
-                        <span>"</span>
-                    </div>
-                </div>
-
-                <div class="test-card">
-                    <div class="test-head">
-                        <div class="test-img">
                             <img src="img/testimonial-img2.jpg" alt="">
                         </div>
-                        <h4>Anya Chima</h4>
                     </div>
-                    <div class="test-msg">
-                        <span>"</span>
-                        <p>I have known Jane to be a highly energetic creative who 
-                            demonstrates integrity at all times. Her critical 
-                            thinking and solution-oriented 
-                            capabilities strengthened my team's endeavours 
-                            and guaranteed our success.</p>
-                        <span>"</span>
+                    <div class="test-body">
+                        <div class="test-msg">
+                            <span>"</span>
+                            <p>I have known Jane to be a highly energetic creative who 
+                                demonstrates integrity at all times. Her critical 
+                                thinking and solution-oriented 
+                                capabilities strengthened my team's endeavours 
+                                and guaranteed our success.</p>
+                            <span>"</span>
+                        </div>
+                        <p>Anya Chima <br>
+                        <small>Project Cordinator, Inlaks Nigeria.</small></p>
                     </div>
                 </div>
 
@@ -225,14 +300,38 @@
                         <div class="test-img">
                             <img src="img/testimonial-img3.jpg" alt="">
                         </div>
-                        <h4>Eze Chinaza</h4>
                     </div>
-                    <div class="test-msg">
-                        <span>"</span>
-                        <p>Jane is always eager to share her knowledge 
-                            as well as learn something new. She is result-driven 
-                            and enthusiastic about taking up new projects. </p>
-                        <span>"</span>
+                    <div class="test-body">
+                        <div class="test-msg">
+                            <span>"</span>
+                            <p>Jane is always eager to share her knowledge 
+                                as well as learn something new. She is result-driven 
+                                and enthusiastic about taking up new projects. </p>
+                            <span>"</span>
+                        </div>
+                        <p>Eze Chinaza <br>
+                        <small>Supply Chain Manager, IBC Worldwide.</small></p>
+                    </div>
+                </div>
+
+                <div class="test-card">
+                    <div class="test-head">
+                        <div class="test-img">
+                            <img src="img/testimonial-img1.jpg" alt="">
+                        </div>  
+                    </div>
+                    <div class="test-body">
+                        <div class="test-msg">
+                            <span>"</span>
+                            <p>Jane contributes strongly in a team and her excellent 
+                                interpersonal skills enable her align well with team members. 
+                                She also enjoys imparting knowledge and giving detailed information 
+                                and explanations on questions/topics. </p>
+                            <span>"</span>  
+                        </div>
+                        <p></p> Promise Etumnu <br>
+                            <small>RDN, Regions' Neuroscience Hospital.</small>
+                        </p>
                     </div>
                 </div>
 
@@ -241,15 +340,18 @@
                         <div class="test-img">
                             <img src="img/testimonial-img4.jpg" alt="">
                         </div>
-                        <h4>Ejiofor Oluchi</h4>
                     </div>
-                    <div class="test-msg">
-                        <span>"</span>
-                        <p>Jane was an outstanding member of my team and constantly
-                            demonstrates exceptional critical thinking skills.
-                            She is also able to motivate others and drive 
-                            performance to deliver any given task efficiently.</p>
-                        <span>"</span>
+                    <div class="test-body">
+                        <div class="test-msg">
+                            <span>"</span>
+                            <p>Jane was an outstanding member of my team and constantly
+                                demonstrates exceptional critical thinking skills.
+                                She is also able to motivate others and drive 
+                                performance to deliver any given task efficiently.</p>
+                            <span>"</span>
+                        </div>
+                        <p>Ejiofor Oluchi <br>
+                        <small>Content Strategist, TechContent Labs.</small></p>
                     </div>
                 </div>
                 
@@ -266,74 +368,34 @@
                 </div>
 
                 <div class="grid-item col--3x">
-                    <img src="./img/grid-img2.jpg" alt="photo-gallery" class="content">
+                    <img src="./img/grid-img2.jpeg" alt="photo-gallery" class="content">
                 </div>
 
                 <div class="grid-item">
-                    <img src="./img/grid-img3.jpg" alt="photo-gallery" class="content">
+                    <img src="./img/grid-img3.jpeg" alt="photo-gallery" class="content">
                 </div>
 
                 <div class="grid-item">
-                    <img src="./img/grid-img4.jpg" alt="photo-gallery" class="content">
+                    <img src="./img/grid-img4.jpeg" alt="photo-gallery" class="content">
                 </div>
 
+                <div class="grid-item  col--2x">
+                    <img src="./img/grid-img5.jpg" alt="photo-gallery" class="content">
+                </div>
+                
                 <div class="grid-item">
-                    <img src="./img/grid-img5.jpeg" alt="photo-gallery" class="content">
+                    <img src="./img/grid-img7.jpeg" alt="photo-gallery" class="content">
                 </div>
 
                 <div class="grid-item">
                     <img src="./img/grid-img6.jpg" alt="photo-gallery" class="content">
                 </div>
-
-                <div class="grid-item  col--2x">
-                    <img src="./img/grid-img11.jpg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item col--2x">
-                    <img src="./img/grid-img15.jpg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img9.jpeg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img14.jpg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item col--3x">
-                    <img src="./img/grid-img19.jpeg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img12.jpg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img13.jpeg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img18.jpeg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img16.jpg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item col--2x">
-                    <img src="./img/grid-img17.jpg" alt="photo-gallery" class="content">
-                </div>
-
-                <div class="grid-item">
-                    <img src="./img/grid-img8.jpg" alt="photo-gallery" class="content">
-                </div>
             </div>
         </section>
 
-
+        
+        <!-- Contact Form Section-->
         <section class="form" id="contact">
-             <!-- Contact Form -->
             <div class="contact-form">
                 <h3>Let's talk!</h3>
                 <form action="" class="subscribe-form" method="POST" data-netlify="true">
@@ -373,7 +435,7 @@
         </div>
 
         <!-- Copyright -->
-        <p>Created by Jandeh, 2020 &copy; All rights reserved.</p>
+        <p><small>Created by Jandeh, 2020 &copy; All rights reserved.</small></p>
     </footer>
 
 
