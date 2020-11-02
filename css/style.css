@@ -58,7 +58,7 @@ h3 {
 /* Header Logo */
 .box1 {
     font-family: 'Indie Flower', cursive;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .box1 a {
@@ -93,7 +93,7 @@ h3 {
 .list-box a {
     display: inline-block;
     padding: 0 2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 1.4rem;
     transition: all 0.6s ease;
 }
@@ -106,7 +106,7 @@ h3 {
 
 .list-box a:hover {
     color: var(--primary-color);
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .icon {
@@ -331,8 +331,8 @@ h3 {
 
 /* Stat section */
 #stats {
-    margin: 2rem auto;
-    padding: 2rem;
+    margin: 2rem auto 3rem;
+    padding: 2rem 2rem 3rem;
 }
 .stat-container {
     text-align: center;
@@ -767,6 +767,7 @@ h3 {
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
+    padding: 4px;
 }
 
 .form-input {
@@ -779,6 +780,7 @@ h3 {
     width: 80%;
     border-radius: 8px;
     color: var(--secondary-color);
+    padding: 4px 8px;
     /* transition: all 0.6s ease; */
 }
 
@@ -915,7 +917,7 @@ a {
 
     #navBar {
         display: flex;
-        width: 85%;
+        width: 78%;
         margin-left: auto;
         flex-direction: row;
         text-align: center;
@@ -924,8 +926,10 @@ a {
     }
     
     .list-box{
-        width: 20%;
+        /* width: 20%; */
         white-space: nowrap;
+        padding: 10px 2px;
+        margin: 0 2px;
     }
 
     .list-box a {
@@ -986,6 +990,9 @@ a {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    #navBar {
+        width: 62%;
+    }
     .grid {
         width: 95%;
         max-width: 1150px;
@@ -1005,6 +1012,9 @@ a {
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    #navBar {
+        width: 52%;
+    }
     .col--3x {
         grid-column-end: span 3;
         grid-row-end: span 2;
